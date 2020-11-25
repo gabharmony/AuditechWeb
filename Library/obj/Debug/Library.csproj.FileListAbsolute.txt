@@ -1,0 +1,6 @@
+C:\tcc\Auditech-Web\Library\bin\Debug\Library.dll
+C:\tcc\Auditech-Web\Library\bin\Debug\Library.pdb
+C:\tcc\Auditech-Web\Library\obj\Debug\Library.csprojAssemblyReference.cache
+C:\tcc\Auditech-Web\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\tcc\Auditech-Web\Library\obj\Debug\Library.dll
+C:\tcc\Auditech-Web\Library\obj\Debug\Library.pdb
