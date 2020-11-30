@@ -18,7 +18,7 @@
     <!--Usado a class: login para atribuir a cor preta na página e a imagem de fundo.
         Class: login faz referência ao arquivo Site.css na pasta Content-->
 <body class="login">
-    <form id="form1" runat="server">
+     <form id="form1" runat="server"> 
         <div>
             <!--DIV com a navbar contendo só a imagem, como no exemplo.
               Imagem na pasta img junto com as outras pastas-->

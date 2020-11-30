@@ -24,34 +24,34 @@ namespace Auditech_Web
 
         protected async Task ResgatarInfo() 
         {
-            string loginId = Convert.ToString(Session["usuarioid"]);
+            //string loginId = Convert.ToString(Session["usuarioid"]);
 
-            if(loginId == null)
-            {
-                Response.Redirect("Login.aspx?SessionString_vazio");
-            }
-            if(loginId != "10")
-            {
-                const string urlBase = "Login.aspx?SessionString_vazio";
+           // if(loginId == null)
+           // {
+            //    Response.Redirect("Login.aspx?SessionString_vazio");
+            //}
+           // if(loginId != "10")
+            //{
+             //   const string urlBase = "Login.aspx?SessionString_vazio";
 
-                string idlogin = loginId;
+            //    string idlogin = loginId;
 
-                string url = string.Format("{0}{1}", urlBase, idlogin);
+             //   string url = string.Format("{0}{1}", urlBase, idlogin);
 
-                Response.Redirect(url);
+             //   Response.Redirect(url);
                 //int id = 11;
                // Usuario u = await uService.GetUsuarioAsync(id);
 
                // Button btnUsuario = (Button)Master.FindControl("btnUsuario");
                 //btnUsuario.Text = u.nome;
 
-            }
+           // }
 
             //if(loginId != 0)
             //{
                 //string idUsuario = (string)Session["IdUsuario"];
-                int id = 11;
-                Usuario u = await uService.GetUsuarioAsync(id);
+               // int id = 11;
+               // Usuario u = await uService.GetUsuarioAsync(id);
 
                 //Button btnUsuario = (Button)Master.FindControl("btnUsuario");
                 //btnUsuario.Text = u.nome;
