@@ -46,7 +46,7 @@ namespace Auditech_Web
                         if (u.idUsuario != 0)
                         {
                             int idUsuario = u.idUsuario;
-                            Response.Redirect("TelaInicial.aspx?");
+                            Response.Redirect(string.Format("TelaInicial.aspx?qs={0}", idUsuario));
                         }
                     }
 
@@ -67,16 +67,16 @@ namespace Auditech_Web
         protected void btnEntrar_Click(object sender, EventArgs e)
         {
             
-            string texto = txtCpf.Text;
-            Response.Redirect(string.Format("Login.aspx?{0}", texto));
-            //if(txtCpf.Text != null && txtDtNasc.Text != null)
-            //{
-            //    RegisterAsyncTask(new PageAsyncTask(Autenticacao));
-            // }
-            // else
-            // {
-            //   Response.Redirect("Login.aspx?Campos CPF e Data de Nascimento vazio");
-            // }
+            //string texto = txtCpf.Text;
+            //Response.Redirect(string.Format("Login.aspx?{0}", texto));
+            if(txtCpf.Text != null && txtDtNasc.Text != null)
+            {
+                RegisterAsyncTask(new PageAsyncTask(Autenticacao));
+            }
+            else
+            {
+               Response.Redirect("Login.aspx?Campos CPF e Data de Nascimento vazio");
+            }
         }
     }
 }
